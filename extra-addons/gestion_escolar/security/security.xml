@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Categoría -->
+    <record id="module_category_school" model="ir.module.category">
+        <field name="name">School</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <!-- Grupo Docente -->
+    <record id="group_school_teacher" model="res.groups">
+        <field name="name">Docente</field>
+        <field name="category_id" ref="module_category_school"/>
+    </record>
+
+    <!-- Grupo Director -->
+    <record id="group_school_director" model="res.groups">
+        <field name="name">Director</field>
+        <field name="category_id" ref="module_category_school"/>
+        <field name="implied_ids" eval="[(4, ref('group_school_teacher'))]"/>
+    </record>
+
+    <!-- Regla: empleados solo lectura -->
+    <record id="rule_hr_employee_school_readonly" model="ir.rule">
+        <field name="name">HR Employees readonly for school groups</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="groups" eval="[(4, ref('group_school_teacher')), (4, ref('group_school_director'))]"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+
+</odoo>
