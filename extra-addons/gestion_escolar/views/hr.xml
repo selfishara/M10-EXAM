@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Herencia del formulario de empleado -->
+    <record id="view_employee_form_inherit_gestion_escolar" model="ir.ui.view">
+        <field name="name">hr.employee.form.inherit.gestion.escolar</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/notebook" position="inside">
+                <page string="School" name="school">
+                    <group>
+                        <field name="is_teacher"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Herencia de la búsqueda de empleados -->
+    <record id="view_employee_filter_inherit_gestion_escolar" model="ir.ui.view">
+        <field name="name">hr.employee.search.inherit.gestion.escolar</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <filter
+                    string="Profesores"
+                    name="teachers"
+                    domain="[('is_teacher', '=', True)]"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
