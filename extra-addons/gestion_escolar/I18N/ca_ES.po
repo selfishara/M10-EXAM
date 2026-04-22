@@ -1,0 +1,259 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* gestion_escolar
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0-20250918\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-22 09:59+0000\n"
+"PO-Revision-Date: 2026-04-22 09:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ca_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: gestion_escolar
+#: model:ir.model.fields.selection,name:gestion_escolar.selection__gestion_escolar_event__type__absence
+msgid "Absence"
+msgstr "Absència"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_student__active
+msgid "Activo"
+msgstr "Actiu"
+
+#. module: gestion_escolar
+#: model:ir.model,name:gestion_escolar.model_gestion_escolar_student
+#: model_terms:ir.ui.view,arch_db:gestion_escolar.view_gestion_escolar_student_form
+msgid "Alumno"
+msgstr "Alumne"
+
+#. module: gestion_escolar
+#: model:ir.actions.act_window,name:gestion_escolar.action_gestion_escolar_student
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_class__student_ids
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_event__student_ids
+#: model:ir.ui.menu,name:gestion_escolar.menu_gestion_escolar_student
+#: model_terms:ir.ui.view,arch_db:gestion_escolar.view_gestion_escolar_class_form
+#: model_terms:ir.ui.view,arch_db:gestion_escolar.view_gestion_escolar_event_form
+#: model_terms:ir.ui.view,arch_db:gestion_escolar.view_gestion_escolar_student_list
+msgid "Alumnos"
+msgstr "Alumnes"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_student__last_name
+msgid "Apellidos"
+msgstr "Cognoms"
+
+#. module: gestion_escolar
+#: model:ir.model.fields.selection,name:gestion_escolar.selection__gestion_escolar_event__type__behavior
+msgid "Behavior"
+msgstr "Comportament"
+
+#. module: gestion_escolar
+#: model:ir.model,name:gestion_escolar.model_gestion_escolar_class
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_student__class_id
+#: model_terms:ir.ui.view,arch_db:gestion_escolar.view_gestion_escolar_class_form
+msgid "Clase"
+msgstr "Classe"
+
+#. module: gestion_escolar
+#: model:ir.actions.act_window,name:gestion_escolar.action_gestion_escolar_class
+#: model:ir.ui.menu,name:gestion_escolar.menu_gestion_escolar_class
+#: model_terms:ir.ui.view,arch_db:gestion_escolar.view_gestion_escolar_class_list
+msgid "Clases"
+msgstr "Classes"
+
+#. module: gestion_escolar
+#: model:ir.model.fields.selection,name:gestion_escolar.selection__gestion_escolar_event__type__congratulations
+msgid "Congratulations"
+msgstr "Felicitacions"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_class__create_uid
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_event__create_uid
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_student__create_uid
+msgid "Created by"
+msgstr "Creat per"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_class__create_date
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_event__create_date
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_student__create_date
+msgid "Created on"
+msgstr "Creat el"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_class__grade
+msgid "Curso"
+msgstr "Curs"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_student__id_number
+msgid "DNI/NIE"
+msgstr "DNI/NIE"
+
+#. module: gestion_escolar
+#: model:ir.model.fields.selection,name:gestion_escolar.selection__gestion_escolar_event__type__delay
+msgid "Delay"
+msgstr "Retard"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_class__description
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_event__description
+#: model_terms:ir.ui.view,arch_db:gestion_escolar.view_gestion_escolar_class_form
+msgid "Descripción"
+msgstr "Descripció"
+
+#. module: gestion_escolar
+#: model:res.groups,name:gestion_escolar.group_school_director
+msgid "Director"
+msgstr "Director"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_class__display_name
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_event__display_name
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_student__display_name
+msgid "Display Name"
+msgstr "Nom visible"
+
+#. module: gestion_escolar
+#: model:res.groups,name:gestion_escolar.group_school_teacher
+msgid "Docente"
+msgstr "Docent"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_student__age
+msgid "Edad"
+msgstr "Edat"
+
+#. module: gestion_escolar
+#: model:ir.model.constraint,message:gestion_escolar.constraint_gestion_escolar_student_id_number_unique
+msgid "El DNI/NIE debe ser único."
+msgstr "El DNI/NIE ha de ser únic."
+
+#. module: gestion_escolar
+#: model:ir.model,name:gestion_escolar.model_hr_employee
+msgid "Employee"
+msgstr "Empleat"
+
+#. module: gestion_escolar
+#: model:ir.model,name:gestion_escolar.model_gestion_escolar_event
+#: model_terms:ir.ui.view,arch_db:gestion_escolar.view_gestion_escolar_event_form
+msgid "Evento"
+msgstr "Esdeveniment"
+
+#. module: gestion_escolar
+#: model:ir.actions.act_window,name:gestion_escolar.action_gestion_escolar_event
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_student__event_ids
+#: model:ir.ui.menu,name:gestion_escolar.menu_gestion_escolar_event
+#: model_terms:ir.ui.view,arch_db:gestion_escolar.view_gestion_escolar_event_list
+#: model_terms:ir.ui.view,arch_db:gestion_escolar.view_gestion_escolar_student_form
+msgid "Eventos"
+msgstr "Esdeveniments"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_event__date
+msgid "Fecha"
+msgstr "Data"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_student__birthdate
+msgid "Fecha de nacimiento"
+msgstr "Data de naixement"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_class__date_end
+msgid "Fecha fin"
+msgstr "Data de fi"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_class__date_begin
+msgid "Fecha inicio"
+msgstr "Data d'inici"
+
+#. module: gestion_escolar
+#: model:ir.model.fields.selection,name:gestion_escolar.selection__gestion_escolar_class__grade__first
+msgid "First"
+msgstr "Primer"
+
+#. module: gestion_escolar
+#: model:ir.model.fields.selection,name:gestion_escolar.selection__gestion_escolar_class__grade__fourth
+msgid "Fourth"
+msgstr "Quart"
+
+#. module: gestion_escolar
+#: model:ir.ui.menu,name:gestion_escolar.menu_gestion_escolar_root
+msgid "Gestión Escolar"
+msgstr "Gestió Escolar"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_class__id
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_event__id
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_student__id
+msgid "ID"
+msgstr "ID"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_hr_employee__is_teacher
+msgid "Is Teacher"
+msgstr "És docent"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_class__write_uid
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_event__write_uid
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_student__write_uid
+msgid "Last Updated by"
+msgstr "Última actualització per"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_class__write_date
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_event__write_date
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_student__write_date
+msgid "Last Updated on"
+msgstr "Última actualització el"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_class__name
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_student__name
+msgid "Nombre"
+msgstr "Nom"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_class__student_number
+msgid "Número de alumnos"
+msgstr "Nombre d'alumnes"
+
+#. module: gestion_escolar
+#: model_terms:ir.ui.view,arch_db:gestion_escolar.view_employee_filter_inherit_gestion_escolar
+msgid "Profesores"
+msgstr "Professors"
+
+#. module: gestion_escolar
+#: model:ir.module.category,name:gestion_escolar.module_category_school
+#: model_terms:ir.ui.view,arch_db:gestion_escolar.view_employee_form_inherit_gestion_escolar
+msgid "School"
+msgstr "Escola"
+
+#. module: gestion_escolar
+#: model:ir.model.fields.selection,name:gestion_escolar.selection__gestion_escolar_class__grade__second
+msgid "Second"
+msgstr "Segon"
+
+#. module: gestion_escolar
+#: model:ir.model.fields.selection,name:gestion_escolar.selection__gestion_escolar_class__grade__third
+msgid "Third"
+msgstr "Tercer"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_event__type
+msgid "Tipo"
+msgstr "Tipus"
+
+#. module: gestion_escolar
+#: model:ir.model.fields,field_description:gestion_escolar.field_gestion_escolar_class__tutor_id
+msgid "Tutor/a"
+msgstr "Tutor/a"

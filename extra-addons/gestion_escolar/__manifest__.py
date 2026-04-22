@@ -16,5 +16,6 @@
         "security/ir.model.access.csv",
         "views/views.xml",
         "views/hr.xml",
+        "demo/demo.xml",
     ],
 }

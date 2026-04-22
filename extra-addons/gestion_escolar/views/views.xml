@@ -66,12 +66,19 @@
     <field name="name">Clases</field>
     <field name="res_model">gestion_escolar.class</field>
     <field name="view_mode">list,form</field>
+    <field name="view_ids" eval="[
+      (5, 0, 0),
+      (0, 0, {'view_mode': 'list', 'view_id': ref('view_gestion_escolar_class_list')}),
+      (0, 0, {'view_mode': 'form', 'view_id': ref('view_gestion_escolar_class_form')})
+    ]"/>
   </record>
 
   <!-- Menú raíz -->
   <menuitem id="menu_gestion_escolar_root"
             name="Gestión Escolar"
-            sequence="10"/>
+            sequence="10"
+            action="action_gestion_escolar_class"
+            web_icon="gestion_escolar,static/description/icon.png"/>
 
   <!-- Submenú Clases -->
   <menuitem id="menu_gestion_escolar_class"
@@ -135,6 +142,11 @@
     <field name="name">Alumnos</field>
     <field name="res_model">gestion_escolar.student</field>
     <field name="view_mode">list,form</field>
+    <field name="view_ids" eval="[
+      (5, 0, 0),
+      (0, 0, {'view_mode': 'list', 'view_id': ref('view_gestion_escolar_student_list')}),
+      (0, 0, {'view_mode': 'form', 'view_id': ref('view_gestion_escolar_student_form')})
+    ]"/>
   </record>
 
   <!-- Submenú Alumnos -->
@@ -149,7 +161,7 @@
   <!-- EVENTOS: LIST + FORM  -->
   <!-- ===================== -->
 
-  <!-- List view (SIN name) -->
+  <!-- List view -->
   <record id="view_gestion_escolar_event_list" model="ir.ui.view">
     <field name="name">gestion_escolar.event.list</field>
     <field name="model">gestion_escolar.event</field>
@@ -161,7 +173,7 @@
     </field>
   </record>
 
-  <!-- Form view (SIN name) -->
+  <!-- Form view -->
   <record id="view_gestion_escolar_event_form" model="ir.ui.view">
     <field name="name">gestion_escolar.event.form</field>
     <field name="model">gestion_escolar.event</field>
@@ -192,6 +204,11 @@
     <field name="name">Eventos</field>
     <field name="res_model">gestion_escolar.event</field>
     <field name="view_mode">list,form</field>
+    <field name="view_ids" eval="[
+      (5, 0, 0),
+      (0, 0, {'view_mode': 'list', 'view_id': ref('view_gestion_escolar_event_list')}),
+      (0, 0, {'view_mode': 'form', 'view_id': ref('view_gestion_escolar_event_form')})
+    ]"/>
   </record>
 
   <!-- Submenú Eventos -->

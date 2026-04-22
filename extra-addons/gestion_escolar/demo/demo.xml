@@ -1,30 +1,79 @@
 <odoo>
-    <data>
-<!--
-          <record id="object0" model="gestion_escolar.gestion_escolar">
-            <field name="name">Object 0</field>
-            <field name="value">0</field>
-          </record>
+    <data noupdate="1">
 
-          <record id="object1" model="gestion_escolar.gestion_escolar">
-            <field name="name">Object 1</field>
-            <field name="value">10</field>
-          </record>
+        <!-- Usuario Docente -->
+        <record id="user_teacher_demo" model="res.users">
+            <field name="name">Docente Demo</field>
+            <field name="login">docente_demo</field>
+            <field name="email">docente@demo.com</field>
+            <field name="groups_id" eval="[(6, 0, [ref('gestion_escolar.group_school_teacher')])]"/>
+        </record>
 
-          <record id="object2" model="gestion_escolar.gestion_escolar">
-            <field name="name">Object 2</field>
-            <field name="value">20</field>
-          </record>
+        <!-- Empleado Docente -->
+        <record id="employee_teacher_demo" model="hr.employee">
+            <field name="name">Docente Demo</field>
+            <field name="user_id" ref="user_teacher_demo"/>
+            <field name="job_title">Docente</field>
+        </record>
 
-          <record id="object3" model="gestion_escolar.gestion_escolar">
-            <field name="name">Object 3</field>
-            <field name="value">30</field>
-          </record>
+        <!-- Usuario Director -->
+        <record id="user_director_demo" model="res.users">
+            <field name="name">Director Demo</field>
+            <field name="login">director_demo</field>
+            <field name="email">director@demo.com</field>
+            <field name="groups_id" eval="[(6, 0, [ref('gestion_escolar.group_school_director')])]"/>
+        </record>
 
-          <record id="object4" model="gestion_escolar.gestion_escolar">
-            <field name="name">Object 4</field>
-            <field name="value">40</field>
-          </record>
--->
+        <!-- Empleado Director -->
+        <record id="employee_director_demo" model="hr.employee">
+            <field name="name">Director Demo</field>
+            <field name="user_id" ref="user_director_demo"/>
+            <field name="job_title">Director</field>
+        </record>
+
+        <!-- Clase -->
+        <record id="class_demo" model="gestion_escolar.class">
+            <field name="name">DAM 2A</field>
+            <field name="grade">second</field>
+            <field name="date_begin">2025-09-15</field>
+            <field name="date_end">2026-06-20</field>
+            <field name="tutor_id" ref="employee_teacher_demo"/>
+            <field name="description">Clase de demostración para gestión escolar.</field>
+        </record>
+
+        <!-- Alumnos -->
+        <record id="student_1_demo" model="gestion_escolar.student">
+            <field name="name">Lucía</field>
+            <field name="last_name">Martínez Pérez</field>
+            <field name="id_number">11111111A</field>
+            <field name="birthdate">2008-03-14</field>
+            <field name="class_id" ref="class_demo"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="student_2_demo" model="gestion_escolar.student">
+            <field name="name">Marc</field>
+            <field name="last_name">Soler Ruiz</field>
+            <field name="id_number">22222222B</field>
+            <field name="birthdate">2008-07-22</field>
+            <field name="class_id" ref="class_demo"/>
+            <field name="active">1</field>
+        </record>
+
+        <!-- Eventos -->
+        <record id="event_1_demo" model="gestion_escolar.event">
+            <field name="date">2026-04-10</field>
+            <field name="type">absence</field>
+            <field name="description">Ausencia justificada de la alumna.</field>
+            <field name="student_ids" eval="[(6, 0, [ref('student_1_demo')])]"/>
+        </record>
+
+        <record id="event_2_demo" model="gestion_escolar.event">
+            <field name="date">2026-04-11</field>
+            <field name="type">congratulations</field>
+            <field name="description">Reconocimiento por buen trabajo en clase.</field>
+            <field name="student_ids" eval="[(6, 0, [ref('student_2_demo')])]"/>
+        </record>
+
     </data>
 </odoo>
